@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MisComm Game</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p id="eyebrowText" class="eyebrow">Real-time party game</p>
+          <h1>MisComm Game</h1>
+        </div>
+        <div class="top-actions">
+          <select id="languageSelect" class="language-select" aria-label="Language">
+            <option value="kk">Қазақша</option>
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+          </select>
+          <div id="connectionStatus" class="status-pill">Connecting</div>
+        </div>
+      </header>
+
+      <section id="app" class="app-surface" aria-live="polite"></section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

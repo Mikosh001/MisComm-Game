@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: miscomm-game
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
